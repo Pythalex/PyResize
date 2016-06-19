@@ -38,7 +38,7 @@ class Application(object):
                           anchor='center')
 
         Label(master=self.master,
-              text='Preview',
+              text='Image',
               font='YuMinchoDemibold',
               foreground='white',
               background='#535353').place(x=120,
@@ -77,7 +77,7 @@ class Application(object):
                 x = self.PILimage.size[0] - (self.PILimage.size[0] * (100 - pourcentage) / 100)
 
             Label(master = self.master,
-                  text = 'Image resized \nfor preview ({}%)'.format(pourcentage),
+                  text = 'Image resized \nfor view ({}%)'.format(pourcentage),
                   font = 'YuMinchoDemibold 6',
                   fg = 'black').place(x=190,y=200)
             print('cc3')
